@@ -1,0 +1,11 @@
+(css 도와주는 사이트 : 부트스트랩)
+https://getbootstrap.com/
+
+(비상업용 이미지 사용가능)
+https://unsplash.com/
+
+(web 표준사이트)
+https://developer.mozilla.org/ko/
+
+(아무 의미 없는 글귀)
+https://www.lipsum.com/

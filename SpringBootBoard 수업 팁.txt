@@ -1,0 +1,39 @@
+**html을 먼저 만들고 spring에 붙인다.
+**html 재사용 가능, spring에서 공통부분 덜어낼 수 있다.(메소드 묶듯이)
+
+1) themeleaf는 컴파일때 실행된다 (오류 잘남)
+	themleleaf는 자바 객체를 풀어서 html로 표현
+	그 역도 성립하도록
+    <form role="form" action="/board" method="post" th:object="${boardForm}">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="제목">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+	**post맵핑할 때 get으로 폼을 띄운다. 이때 빈 객체를 하나 만들어 보내준다.
+
+2) 폴더 구조 합쳐질 때
+  톱니바퀴->compact middle package 해제
+
+3) th:replace="~~" 이거는 공용으로 쓸때 사용한다.(네비게이션 바 는 무슨 창에서든 뜬다)
+
+4) static 폴더에는 [이미지, css, javascript] 파일만 들어간다.
+  html빼고는 다 정적이다.
+
+5) templates 폴더에는 html파일이 들어간다.
+
+6) lombok 사용시
+	setting->build~~->compiler->annotation process 에서 enable 체크
+
+7) 한글 사용시
+	setting->build~~->build tools->gradle에서 build and run using과 run tests using을 intellij idea로 바꿈
+
+8) 깃헙에서 다른 사람파일을 들고 올때 다른사람 파일을 열고 vcs->git->remote에 본인 깃헙 레파지토리 주소로 푸시
+
+9) controller, service, repo으로 분리되어 짜야한다.
+
+10) repo에서 @는 붙이지 않는다.
+
+11) controller는 데이터와 뷰를 연결(model로 한다)
+
+12) service는 DB와 붙는다.
